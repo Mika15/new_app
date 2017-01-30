@@ -1,4 +1,4 @@
-city,number of terror attacks,number of death,country,latitude,longitude
+city,attacks,death,country,latitude,longitude
 Baghdad,6237,6162,Iraq,33.634722,44.672473
 Karachi,2538,2521,Pakistan,25.403168,68.377153
 Lima,2366,2139,Peru,-11.850166,-76.835517
