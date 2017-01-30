@@ -5,13 +5,25 @@
         <h1>The least safe cities in the world since 1970</h1>
         <table border=1 cellpadding=7>
             <tr>
-                <th>Name</th>
+                <th>City</th>
+                <th>Number of attacks</th>
+                <th>Number of death</th>
+                <th>Country</th>
+                <th>latitude</th>
+                <th>longitude</th>     
             </tr>
             {% for obj in object_list %}
             <tr>
                 <td>{{ obj.city }}</td>
+                <td>{{ obj.attacks }}</td>
+                <td>{{ obj.death }}</td>
+                <td>{{ obj.country }}</td>
+                <td>{{ obj.latitude }}</td>
+                <td>{{ obj.longitude }}</td>
             </tr>
             {% endfor %}
         </table>
     </body>
 </html>
+
+
