@@ -1,0 +1,2127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    </head>
+    <body>
+        <div id="map" style="width:100%; height:300px;"></div>
+        <h1>The least safe cities in the world since 1970</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>City</th>
+                <th>Number of attacks</th>
+                <th>Number of death</th>
+                <th>Country</th>
+                <th>latitude</th>
+                <th>longitude</th>     
+            </tr>
+            
+            <tr>
+                <td><a href="2/">Baghdad</a></td>
+                <td>6237</td>
+                <td>6162</td>
+                <td>Iraq</td>
+                <td>33.634722</td>
+                <td>44.672473</td>
+            </tr>
+            
+            <tr>
+                <td><a href="3/">Karachi</a></td>
+                <td>2538</td>
+                <td>2521</td>
+                <td>Pakistan</td>
+                <td>25.403168</td>
+                <td>68.377153</td>
+            </tr>
+            
+            <tr>
+                <td><a href="4/">Lima</a></td>
+                <td>2366</td>
+                <td>2139</td>
+                <td>Peru</td>
+                <td>-11.850166</td>
+                <td>-76.835517</td>
+            </tr>
+            
+            <tr>
+                <td><a href="5/">Belfast</a></td>
+                <td>2105</td>
+                <td>2063</td>
+                <td>United Kingdom</td>
+                <td>54.662388</td>
+                <td>30.037634</td>
+            </tr>
+            
+            <tr>
+                <td><a href="6/">Santiago</a></td>
+                <td>1616</td>
+                <td>1352</td>
+                <td>Chile</td>
+                <td>16.714983</td>
+                <td>123.437135</td>
+            </tr>
+            
+            <tr>
+                <td><a href="7/">Mosul</a></td>
+                <td>1553</td>
+                <td>1519</td>
+                <td>Iraq</td>
+                <td>36.482036</td>
+                <td>43.262783</td>
+            </tr>
+            
+            <tr>
+                <td><a href="8/">San Salvador</a></td>
+                <td>1551</td>
+                <td>1259</td>
+                <td>El Salvador</td>
+                <td>13.69288</td>
+                <td>-89.199161</td>
+            </tr>
+            
+            <tr>
+                <td><a href="9/">Mogadishu</a></td>
+                <td>1169</td>
+                <td>1047</td>
+                <td>Somalia</td>
+                <td>4.735972</td>
+                <td>45.465556</td>
+            </tr>
+            
+            <tr>
+                <td><a href="10/">Istanbul</a></td>
+                <td>999</td>
+                <td>967</td>
+                <td>Turkey</td>
+                <td>41.18716</td>
+                <td>41.017222</td>
+            </tr>
+            
+            <tr>
+                <td><a href="11/">Bogota</a></td>
+                <td>979</td>
+                <td>919</td>
+                <td>Colombia</td>
+                <td>4.753487</td>
+                <td>-74.041028</td>
+            </tr>
+            
+            <tr>
+                <td><a href="12/">Athens</a></td>
+                <td>965</td>
+                <td>955</td>
+                <td>Greece</td>
+                <td>38.092649</td>
+                <td>23.948416</td>
+            </tr>
+            
+            <tr>
+                <td><a href="13/">Beirut</a></td>
+                <td>919</td>
+                <td>833</td>
+                <td>Lebanon</td>
+                <td>33.902127</td>
+                <td>35.533795</td>
+            </tr>
+            
+            <tr>
+                <td><a href="14/">Medellin</a></td>
+                <td>860</td>
+                <td>825</td>
+                <td>Colombia</td>
+                <td>7.198606</td>
+                <td>-74.491672</td>
+            </tr>
+            
+            <tr>
+                <td><a href="15/">Kirkuk</a></td>
+                <td>852</td>
+                <td>840</td>
+                <td>Iraq</td>
+                <td>35.514798</td>
+                <td>44.42025</td>
+            </tr>
+            
+            <tr>
+                <td><a href="16/">Guatemala City</a></td>
+                <td>834</td>
+                <td>713</td>
+                <td>Guatemala</td>
+                <td>14.624795</td>
+                <td>-90.532818</td>
+            </tr>
+            
+            <tr>
+                <td><a href="17/">Peshawar</a></td>
+                <td>739</td>
+                <td>726</td>
+                <td>Pakistan</td>
+                <td>35.842423</td>
+                <td>71.65</td>
+            </tr>
+            
+            <tr>
+                <td><a href="18/">Benghazi</a></td>
+                <td>707</td>
+                <td>675</td>
+                <td>Libya</td>
+                <td>32.204861</td>
+                <td>20.270833</td>
+            </tr>
+            
+            <tr>
+                <td><a href="19/">Baqubah</a></td>
+                <td>698</td>
+                <td>689</td>
+                <td>Iraq</td>
+                <td>33.803935</td>
+                <td>45.14945</td>
+            </tr>
+            
+            <tr>
+                <td><a href="20/">Quetta</a></td>
+                <td>691</td>
+                <td>683</td>
+                <td>Pakistan</td>
+                <td>34.006649</td>
+                <td>71.999817</td>
+            </tr>
+            
+            <tr>
+                <td><a href="21/">Srinagar</a></td>
+                <td>621</td>
+                <td>607</td>
+                <td>India</td>
+                <td>34.140401</td>
+                <td>84.228796</td>
+            </tr>
+            
+            <tr>
+                <td><a href="22/">Paris</a></td>
+                <td>595</td>
+                <td>541</td>
+                <td>France</td>
+                <td>48.891742</td>
+                <td>5.36978</td>
+            </tr>
+            
+            <tr>
+                <td><a href="23/">Jerusalem</a></td>
+                <td>575</td>
+                <td>540</td>
+                <td>Israel</td>
+                <td>31.872541</td>
+                <td>35.263051</td>
+            </tr>
+            
+            <tr>
+                <td><a href="24/">Kabul</a></td>
+                <td>552</td>
+                <td>544</td>
+                <td>Afghanistan</td>
+                <td>34.58353</td>
+                <td>69.331777</td>
+            </tr>
+            
+            <tr>
+                <td><a href="25/">Rome</a></td>
+                <td>549</td>
+                <td>509</td>
+                <td>Italy</td>
+                <td>41.901514</td>
+                <td>12.498496</td>
+            </tr>
+            
+            <tr>
+                <td><a href="26/">Dhaka</a></td>
+                <td>544</td>
+                <td>539</td>
+                <td>Bangladesh</td>
+                <td>32.565199</td>
+                <td>90.464391</td>
+            </tr>
+            
+            <tr>
+                <td><a href="27/">Tripoli</a></td>
+                <td>503</td>
+                <td>440</td>
+                <td>Libya</td>
+                <td>34.452856</td>
+                <td>35.864631</td>
+            </tr>
+            
+            <tr>
+                <td><a href="28/">Manila</a></td>
+                <td>496</td>
+                <td>466</td>
+                <td>Philippines</td>
+                <td>14.627463</td>
+                <td>121.077534</td>
+            </tr>
+            
+            <tr>
+                <td><a href="29/">Fallujah</a></td>
+                <td>494</td>
+                <td>484</td>
+                <td>Iraq</td>
+                <td>34.601517</td>
+                <td>44.220527</td>
+            </tr>
+            
+            <tr>
+                <td><a href="30/">Ayacucho</a></td>
+                <td>470</td>
+                <td>377</td>
+                <td>Peru</td>
+                <td>8.60075</td>
+                <td>-73.58638</td>
+            </tr>
+            
+            <tr>
+                <td><a href="31/">Buenos Aires</a></td>
+                <td>460</td>
+                <td>419</td>
+                <td>Argentina</td>
+                <td>12.49646</td>
+                <td>123.717095</td>
+            </tr>
+            
+            <tr>
+                <td><a href="32/">New York City</a></td>
+                <td>444</td>
+                <td>434</td>
+                <td>United States</td>
+                <td>40.860619</td>
+                <td>-73.595724</td>
+            </tr>
+            
+            <tr>
+                <td><a href="33/">Sanaa</a></td>
+                <td>427</td>
+                <td>396</td>
+                <td>Yemen</td>
+                <td>15.479939</td>
+                <td>45.29554</td>
+            </tr>
+            
+            <tr>
+                <td><a href="34/">Ramadi</a></td>
+                <td>418</td>
+                <td>392</td>
+                <td>Iraq</td>
+                <td>33.488425</td>
+                <td>43.494067</td>
+            </tr>
+            
+            <tr>
+                <td><a href="35/">Madrid</a></td>
+                <td>412</td>
+                <td>363</td>
+                <td>Spain</td>
+                <td>40.416775</td>
+                <td>-3.700345</td>
+            </tr>
+            
+            <tr>
+                <td><a href="36/">Algiers</a></td>
+                <td>407</td>
+                <td>404</td>
+                <td>Algeria</td>
+                <td>36.794519</td>
+                <td>3.594444</td>
+            </tr>
+            
+            <tr>
+                <td><a href="37/">London</a></td>
+                <td>382</td>
+                <td>364</td>
+                <td>United Kingdom</td>
+                <td>51.590219</td>
+                <td>0.163381</td>
+            </tr>
+            
+            <tr>
+                <td><a href="38/">Tikrit</a></td>
+                <td>377</td>
+                <td>366</td>
+                <td>Iraq</td>
+                <td>34.924488</td>
+                <td>44.422</td>
+            </tr>
+            
+            <tr>
+                <td><a href="39/">Maiduguri</a></td>
+                <td>348</td>
+                <td>335</td>
+                <td>Nigeria</td>
+                <td>11.948538</td>
+                <td>14.518024</td>
+            </tr>
+            
+            <tr>
+                <td><a href="40/">Imphal</a></td>
+                <td>342</td>
+                <td>340</td>
+                <td>India</td>
+                <td>24.852796</td>
+                <td>94.011154</td>
+            </tr>
+            
+            <tr>
+                <td><a href="41/">Gaza</a></td>
+                <td>338</td>
+                <td>311</td>
+                <td>Nigeria</td>
+                <td>31.564107</td>
+                <td>34.499499</td>
+            </tr>
+            
+            <tr>
+                <td><a href="42/">Bilbao</a></td>
+                <td>337</td>
+                <td>309</td>
+                <td>Colombia</td>
+                <td>43.274986</td>
+                <td>-2.718935</td>
+            </tr>
+            
+            <tr>
+                <td><a href="43/">Londonderry</a></td>
+                <td>328</td>
+                <td>316</td>
+                <td>United Kingdom</td>
+                <td>55.039475</td>
+                <td>-7.248742</td>
+            </tr>
+            
+            <tr>
+                <td><a href="44/">Kandahar</a></td>
+                <td>326</td>
+                <td>326</td>
+                <td>Afghanistan</td>
+                <td>31.642227</td>
+                <td>65.870557</td>
+            </tr>
+            
+            <tr>
+                <td><a href="45/">Colombo</a></td>
+                <td>326</td>
+                <td>323</td>
+                <td>Sri Lanka</td>
+                <td>6.971672</td>
+                <td>79.922069</td>
+            </tr>
+            
+            <tr>
+                <td><a href="46/">Cali</a></td>
+                <td>317</td>
+                <td>290</td>
+                <td>Colombia</td>
+                <td>3.450556</td>
+                <td>-74.188333</td>
+            </tr>
+            
+            <tr>
+                <td><a href="47/">Ajaccio</a></td>
+                <td>302</td>
+                <td>280</td>
+                <td>France</td>
+                <td>41.919229</td>
+                <td>8.738635</td>
+            </tr>
+            
+            <tr>
+                <td><a href="48/">Damascus</a></td>
+                <td>300</td>
+                <td>285</td>
+                <td>Syria</td>
+                <td>35.5111</td>
+                <td>36.704464</td>
+            </tr>
+            
+            <tr>
+                <td><a href="49/">Arish</a></td>
+                <td>292</td>
+                <td>289</td>
+                <td>Egypt</td>
+                <td>31.137603</td>
+                <td>33.855743</td>
+            </tr>
+            
+            <tr>
+                <td><a href="50/">Tehran</a></td>
+                <td>281</td>
+                <td>233</td>
+                <td>Iran</td>
+                <td>35.79153</td>
+                <td>51.516464</td>
+            </tr>
+            
+            <tr>
+                <td><a href="51/">Aleppo</a></td>
+                <td>277</td>
+                <td>246</td>
+                <td>Syria</td>
+                <td>36.233621</td>
+                <td>37.285795</td>
+            </tr>
+            
+            <tr>
+                <td><a href="52/">Ankara</a></td>
+                <td>274</td>
+                <td>238</td>
+                <td>Turkey</td>
+                <td>39.962373</td>
+                <td>32.904797</td>
+            </tr>
+            
+            <tr>
+                <td><a href="53/">Donostia-San Sebastian</a></td>
+                <td>272</td>
+                <td>244</td>
+                <td>Spain</td>
+                <td>43.320812</td>
+                <td>-1.984447</td>
+            </tr>
+            
+            <tr>
+                <td><a href="54/">Tuz Khormato</a></td>
+                <td>263</td>
+                <td>260</td>
+                <td>Iraq</td>
+                <td>35.468763</td>
+                <td>44.8571</td>
+            </tr>
+            
+            <tr>
+                <td><a href="55/">Johannesburg</a></td>
+                <td>256</td>
+                <td>245</td>
+                <td>South Africa</td>
+                <td>-26.172279</td>
+                <td>28.110844</td>
+            </tr>
+            
+            <tr>
+                <td><a href="56/">Samarra</a></td>
+                <td>253</td>
+                <td>252</td>
+                <td>Iraq</td>
+                <td>34.658697</td>
+                <td>43.946574</td>
+            </tr>
+            
+            <tr>
+                <td><a href="57/">Abu Ghraib</a></td>
+                <td>239</td>
+                <td>238</td>
+                <td>Iraq</td>
+                <td>33.325</td>
+                <td>44.422</td>
+            </tr>
+            
+            <tr>
+                <td><a href="58/">Aden</a></td>
+                <td>238</td>
+                <td>232</td>
+                <td>Yemen</td>
+                <td>12.894405</td>
+                <td>45.055728</td>
+            </tr>
+            
+            <tr>
+                <td><a href="59/">Baiji</a></td>
+                <td>233</td>
+                <td>224</td>
+                <td>Iraq</td>
+                <td>35.015777</td>
+                <td>44.285513</td>
+            </tr>
+            
+            <tr>
+                <td><a href="60/">Bastia</a></td>
+                <td>225</td>
+                <td>219</td>
+                <td>France</td>
+                <td>42.697616</td>
+                <td>9.450293</td>
+            </tr>
+            
+            <tr>
+                <td><a href="61/">Barcelona</a></td>
+                <td>221</td>
+                <td>189</td>
+                <td>Spain</td>
+                <td>41.387917</td>
+                <td>124.143448</td>
+            </tr>
+            
+            <tr>
+                <td><a href="62/">Grozny</a></td>
+                <td>220</td>
+                <td>214</td>
+                <td>Russia</td>
+                <td>43.427011</td>
+                <td>46.087993</td>
+            </tr>
+            
+            <tr>
+                <td><a href="63/">Lahore</a></td>
+                <td>213</td>
+                <td>209</td>
+                <td>Pakistan</td>
+                <td>31.601849</td>
+                <td>74.422675</td>
+            </tr>
+            
+            <tr>
+                <td><a href="64/">Bangkok</a></td>
+                <td>212</td>
+                <td>212</td>
+                <td>Thailand</td>
+                <td>13.913611</td>
+                <td>101.658222</td>
+            </tr>
+            
+            <tr>
+                <td><a href="65/">Jalalabad</a></td>
+                <td>208</td>
+                <td>205</td>
+                <td>Afghanistan</td>
+                <td>34.435863</td>
+                <td>70.5</td>
+            </tr>
+            
+            <tr>
+                <td><a href="66/">Managua</a></td>
+                <td>202</td>
+                <td>180</td>
+                <td>Nicaragua</td>
+                <td>12.136389</td>
+                <td>-86.235539</td>
+            </tr>
+            
+            <tr>
+                <td><a href="67/">Milan</a></td>
+                <td>202</td>
+                <td>186</td>
+                <td>Italy</td>
+                <td>45.470484</td>
+                <td>41.887635</td>
+            </tr>
+            
+            <tr>
+                <td><a href="68/">Cairo</a></td>
+                <td>199</td>
+                <td>198</td>
+                <td>Egypt</td>
+                <td>41.002235</td>
+                <td>31.413889</td>
+            </tr>
+            
+            <tr>
+                <td><a href="69/">Sidon</a></td>
+                <td>192</td>
+                <td>166</td>
+                <td>Lebanon</td>
+                <td>33.588611</td>
+                <td>35.406025</td>
+            </tr>
+            
+            <tr>
+                <td><a href="70/">Makhachkala</a></td>
+                <td>192</td>
+                <td>191</td>
+                <td>Russia</td>
+                <td>42.988836</td>
+                <td>47.513008</td>
+            </tr>
+            
+            <tr>
+                <td><a href="71/">Santa Ana</a></td>
+                <td>191</td>
+                <td>132</td>
+                <td>United States</td>
+                <td>33.745573</td>
+                <td>-74.57168</td>
+            </tr>
+            
+            <tr>
+                <td><a href="72/">Jaffna</a></td>
+                <td>191</td>
+                <td>175</td>
+                <td>Sri Lanka</td>
+                <td>9.66123</td>
+                <td>80.02558</td>
+            </tr>
+            
+            <tr>
+                <td><a href="73/">Rafah</a></td>
+                <td>191</td>
+                <td>181</td>
+                <td>Egypt</td>
+                <td>31.29877</td>
+                <td>34.276111</td>
+            </tr>
+            
+            <tr>
+                <td><a href="74/">Hebron</a></td>
+                <td>188</td>
+                <td>177</td>
+                <td>Israel</td>
+                <td>31.57578</td>
+                <td>35.11114</td>
+            </tr>
+            
+            <tr>
+                <td><a href="75/">Basra</a></td>
+                <td>187</td>
+                <td>182</td>
+                <td>Iraq</td>
+                <td>30.568506</td>
+                <td>47.823486</td>
+            </tr>
+            
+            <tr>
+                <td><a href="76/">Donetsk</a></td>
+                <td>186</td>
+                <td>172</td>
+                <td>Ukraine</td>
+                <td>48.330838</td>
+                <td>39.935977</td>
+            </tr>
+            
+            <tr>
+                <td><a href="77/">Huancayo</a></td>
+                <td>184</td>
+                <td>169</td>
+                <td>Peru</td>
+                <td>-12.027479</td>
+                <td>-75.20708</td>
+            </tr>
+            
+            <tr>
+                <td><a href="78/">San Miguel</a></td>
+                <td>182</td>
+                <td>118</td>
+                <td>Argentina</td>
+                <td>15.145901</td>
+                <td>126.001038</td>
+            </tr>
+            
+            <tr>
+                <td><a href="79/">Tokyo</a></td>
+                <td>180</td>
+                <td>166</td>
+                <td>Japan</td>
+                <td>35.752804</td>
+                <td>139.756684</td>
+            </tr>
+            
+            <tr>
+                <td><a href="80/">La Paz</a></td>
+                <td>180</td>
+                <td>164</td>
+                <td>Bolivia</td>
+                <td>10.3879</td>
+                <td>125.799743</td>
+            </tr>
+            
+            <tr>
+                <td><a href="81/">Madain</a></td>
+                <td>178</td>
+                <td>178</td>
+                <td>Iraq</td>
+                <td>33.121665</td>
+                <td>44.610397</td>
+            </tr>
+            
+            <tr>
+                <td><a href="82/">Kismayo</a></td>
+                <td>176</td>
+                <td>135</td>
+                <td>Somalia</td>
+                <td>-0.349432</td>
+                <td>42.552915</td>
+            </tr>
+            
+            <tr>
+                <td><a href="83/">Bara</a></td>
+                <td>169</td>
+                <td>164</td>
+                <td>India</td>
+                <td>34.559259</td>
+                <td>85.065024</td>
+            </tr>
+            
+            <tr>
+                <td><a href="84/">Batticaloa</a></td>
+                <td>165</td>
+                <td>163</td>
+                <td>Sri Lanka</td>
+                <td>7.785857</td>
+                <td>81.700188</td>
+            </tr>
+            
+            <tr>
+                <td><a href="85/">Bujumbura</a></td>
+                <td>165</td>
+                <td>162</td>
+                <td>Burundi</td>
+                <td>-3.318463</td>
+                <td>29.391811</td>
+            </tr>
+            
+            <tr>
+                <td><a href="86/">Mahmudiyah</a></td>
+                <td>165</td>
+                <td>165</td>
+                <td>Iraq</td>
+                <td>33.067184</td>
+                <td>44.371554</td>
+            </tr>
+            
+            <tr>
+                <td><a href="87/">Tegucigalpa</a></td>
+                <td>164</td>
+                <td>151</td>
+                <td>Honduras</td>
+                <td>14.083379</td>
+                <td>-87.2167</td>
+            </tr>
+            
+            <tr>
+                <td><a href="88/">Zamboanga City</a></td>
+                <td>161</td>
+                <td>150</td>
+                <td>Philippines</td>
+                <td>7.02449</td>
+                <td>122.189302</td>
+            </tr>
+            
+            <tr>
+                <td><a href="89/">Khost</a></td>
+                <td>161</td>
+                <td>161</td>
+                <td>Afghanistan</td>
+                <td>33.367136</td>
+                <td>69.966903</td>
+            </tr>
+            
+            <tr>
+                <td><a href="90/">Nablus</a></td>
+                <td>161</td>
+                <td>155</td>
+                <td>Israel</td>
+                <td>32.230503</td>
+                <td>35.261962</td>
+            </tr>
+            
+            <tr>
+                <td><a href="91/">New Delhi</a></td>
+                <td>157</td>
+                <td>156</td>
+                <td>India</td>
+                <td>28.687023</td>
+                <td>77.317725</td>
+            </tr>
+            
+            <tr>
+                <td><a href="92/">Muqdadiyah</a></td>
+                <td>156</td>
+                <td>154</td>
+                <td>Iraq</td>
+                <td>34.001045</td>
+                <td>44.941095</td>
+            </tr>
+            
+            <tr>
+                <td><a href="93/">Sheikh Zuweid</a></td>
+                <td>155</td>
+                <td>153</td>
+                <td>Egypt</td>
+                <td>31.217665</td>
+                <td>34.218948</td>
+            </tr>
+            
+            <tr>
+                <td><a href="94/">Lashkar Gah</a></td>
+                <td>154</td>
+                <td>154</td>
+                <td>Afghanistan</td>
+                <td>31.606939</td>
+                <td>64.413271</td>
+            </tr>
+            
+            <tr>
+                <td><a href="95/">Tarmiyah</a></td>
+                <td>154</td>
+                <td>153</td>
+                <td>Iraq</td>
+                <td>33.670904</td>
+                <td>44.399201</td>
+            </tr>
+            
+            <tr>
+                <td><a href="96/">Jamrud</a></td>
+                <td>154</td>
+                <td>151</td>
+                <td>Pakistan</td>
+                <td>34.006723</td>
+                <td>71.410604</td>
+            </tr>
+            
+            <tr>
+                <td><a href="97/">Taji</a></td>
+                <td>151</td>
+                <td>150</td>
+                <td>Iraq</td>
+                <td>33.541681</td>
+                <td>44.2775</td>
+            </tr>
+            
+            <tr>
+                <td><a href="98/">Tel Aviv</a></td>
+                <td>149</td>
+                <td>137</td>
+                <td>Israel</td>
+                <td>32.102588</td>
+                <td>34.878821</td>
+            </tr>
+            
+            <tr>
+                <td><a href="99/">Valparaiso</a></td>
+                <td>147</td>
+                <td>121</td>
+                <td>Chile</td>
+                <td>12.479267</td>
+                <td>123.739079</td>
+            </tr>
+            
+            <tr>
+                <td><a href="100/">Soweto</a></td>
+                <td>143</td>
+                <td>138</td>
+                <td>South Africa</td>
+                <td>-26.24518</td>
+                <td>27.854622</td>
+            </tr>
+            
+        </table>
+        <script type="text/javascript">
+            var map = L.map('map').setView([33.634722, 44.672473], 9);
+            var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.'
+            });
+            map.addLayer(osmLayer);
+            
+            var data = {
+            "type": "FeatureCollection",
+            "features": [
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Baghdad",
+            "id": "2"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.672473, 33.634722]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Karachi",
+            "id": "3"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [68.377153, 25.403168]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Lima",
+            "id": "4"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-76.835517, -11.850166]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Belfast",
+            "id": "5"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [30.037634, 54.662388]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Santiago",
+            "id": "6"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [123.437135, 16.714983]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Mosul",
+            "id": "7"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [43.262783, 36.482036]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "San Salvador",
+            "id": "8"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-89.199161, 13.69288]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Mogadishu",
+            "id": "9"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [45.465556, 4.735972]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Istanbul",
+            "id": "10"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [41.017222, 41.18716]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bogota",
+            "id": "11"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-74.041028, 4.753487]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Athens",
+            "id": "12"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [23.948416, 38.092649]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Beirut",
+            "id": "13"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.533795, 33.902127]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Medellin",
+            "id": "14"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-74.491672, 7.198606]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Kirkuk",
+            "id": "15"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.42025, 35.514798]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Guatemala City",
+            "id": "16"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-90.532818, 14.624795]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Peshawar",
+            "id": "17"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [71.65, 35.842423]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Benghazi",
+            "id": "18"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [20.270833, 32.204861]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Baqubah",
+            "id": "19"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [45.14945, 33.803935]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Quetta",
+            "id": "20"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [71.999817, 34.006649]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Srinagar",
+            "id": "21"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [84.228796, 34.140401]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Paris",
+            "id": "22"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [5.36978, 48.891742]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Jerusalem",
+            "id": "23"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.263051, 31.872541]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Kabul",
+            "id": "24"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [69.331777, 34.58353]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Rome",
+            "id": "25"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [12.498496, 41.901514]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Dhaka",
+            "id": "26"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [90.464391, 32.565199]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tripoli",
+            "id": "27"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.864631, 34.452856]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Manila",
+            "id": "28"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [121.077534, 14.627463]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Fallujah",
+            "id": "29"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.220527, 34.601517]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Ayacucho",
+            "id": "30"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-73.58638, 8.60075]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Buenos Aires",
+            "id": "31"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [123.717095, 12.49646]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "New York City",
+            "id": "32"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-73.595724, 40.860619]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Sanaa",
+            "id": "33"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [45.29554, 15.479939]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Ramadi",
+            "id": "34"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [43.494067, 33.488425]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Madrid",
+            "id": "35"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-3.700345, 40.416775]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Algiers",
+            "id": "36"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [3.594444, 36.794519]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "London",
+            "id": "37"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [0.163381, 51.590219]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tikrit",
+            "id": "38"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.422, 34.924488]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Maiduguri",
+            "id": "39"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [14.518024, 11.948538]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Imphal",
+            "id": "40"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [94.011154, 24.852796]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Gaza",
+            "id": "41"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [34.499499, 31.564107]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bilbao",
+            "id": "42"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-2.718935, 43.274986]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Londonderry",
+            "id": "43"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-7.248742, 55.039475]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Kandahar",
+            "id": "44"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [65.870557, 31.642227]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Colombo",
+            "id": "45"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [79.922069, 6.971672]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Cali",
+            "id": "46"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-74.188333, 3.450556]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Ajaccio",
+            "id": "47"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [8.738635, 41.919229]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Damascus",
+            "id": "48"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [36.704464, 35.5111]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Arish",
+            "id": "49"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [33.855743, 31.137603]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tehran",
+            "id": "50"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [51.516464, 35.79153]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Aleppo",
+            "id": "51"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [37.285795, 36.233621]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Ankara",
+            "id": "52"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [32.904797, 39.962373]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Donostia-San Sebastian",
+            "id": "53"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-1.984447, 43.320812]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tuz Khormato",
+            "id": "54"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.8571, 35.468763]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Johannesburg",
+            "id": "55"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [28.110844, -26.172279]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Samarra",
+            "id": "56"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [43.946574, 34.658697]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Abu Ghraib",
+            "id": "57"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.422, 33.325]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Aden",
+            "id": "58"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [45.055728, 12.894405]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Baiji",
+            "id": "59"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.285513, 35.015777]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bastia",
+            "id": "60"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [9.450293, 42.697616]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Barcelona",
+            "id": "61"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [124.143448, 41.387917]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Grozny",
+            "id": "62"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [46.087993, 43.427011]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Lahore",
+            "id": "63"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [74.422675, 31.601849]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bangkok",
+            "id": "64"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [101.658222, 13.913611]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Jalalabad",
+            "id": "65"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [70.5, 34.435863]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Managua",
+            "id": "66"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-86.235539, 12.136389]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Milan",
+            "id": "67"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [41.887635, 45.470484]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Cairo",
+            "id": "68"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [31.413889, 41.002235]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Sidon",
+            "id": "69"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.406025, 33.588611]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Makhachkala",
+            "id": "70"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [47.513008, 42.988836]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Santa Ana",
+            "id": "71"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-74.57168, 33.745573]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Jaffna",
+            "id": "72"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [80.02558, 9.66123]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Rafah",
+            "id": "73"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [34.276111, 31.29877]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Hebron",
+            "id": "74"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.11114, 31.57578]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Basra",
+            "id": "75"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [47.823486, 30.568506]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Donetsk",
+            "id": "76"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [39.935977, 48.330838]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Huancayo",
+            "id": "77"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-75.20708, -12.027479]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "San Miguel",
+            "id": "78"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [126.001038, 15.145901]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tokyo",
+            "id": "79"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [139.756684, 35.752804]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "La Paz",
+            "id": "80"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [125.799743, 10.3879]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Madain",
+            "id": "81"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.610397, 33.121665]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Kismayo",
+            "id": "82"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [42.552915, -0.349432]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bara",
+            "id": "83"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [85.065024, 34.559259]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Batticaloa",
+            "id": "84"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [81.700188, 7.785857]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Bujumbura",
+            "id": "85"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [29.391811, -3.318463]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Mahmudiyah",
+            "id": "86"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.371554, 33.067184]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tegucigalpa",
+            "id": "87"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [-87.2167, 14.083379]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Zamboanga City",
+            "id": "88"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [122.189302, 7.02449]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Khost",
+            "id": "89"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [69.966903, 33.367136]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Nablus",
+            "id": "90"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [35.261962, 32.230503]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "New Delhi",
+            "id": "91"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [77.317725, 28.687023]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Muqdadiyah",
+            "id": "92"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.941095, 34.001045]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Sheikh Zuweid",
+            "id": "93"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [34.218948, 31.217665]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Lashkar Gah",
+            "id": "94"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [64.413271, 31.606939]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tarmiyah",
+            "id": "95"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.399201, 33.670904]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Jamrud",
+            "id": "96"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [71.410604, 34.006723]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Taji",
+            "id": "97"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [44.2775, 33.541681]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Tel Aviv",
+            "id": "98"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [34.878821, 32.102588]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Valparaiso",
+            "id": "99"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [123.739079, 12.479267]
+            }
+            },
+            
+            {
+            "type": "Feature",
+            "properties": {
+            "city": "Soweto",
+            "id": "100"
+            },
+            "geometry": {
+            "type": "Point",
+            "coordinates": [27.854622, -26.24518]
+            }
+            }
+            
+            ]
+            };
+            var dataLayer = L.geoJson(data, {
+                onEachFeature: function(feature, layer) {
+                    layer.bindPopup(
+                        '<a href="' + feature.properties.id + '/">' +
+                            feature.properties.city +
+                        '</a>'
+                    );
+                }
+            });
+            map.addLayer(dataLayer);
+        </script> 
+    </body>
+</html>
+
