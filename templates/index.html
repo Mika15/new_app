@@ -47,15 +47,23 @@
             },
             "geometry": {
             "type": "Point",
-            "coordinates": [{{ obj.x }}, {{ obj.y }}]
+            "coordinates": [{{ obj.longitude }}, {{ obj.latitude }}]
             }
             }{% if not loop.last %},{% endif %}
             {% endfor %}
             ]
             };
-            var dataLayer = L.geoJson(data);
+            var dataLayer = L.geoJson(data, {
+                onEachFeature: function(feature, layer) {
+                    layer.bindPopup(
+                        '<a href="' + feature.properties.id + '/">' +
+                            feature.properties.city +
+                        '</a>'
+                    );
+                }
+            });
             map.addLayer(dataLayer);
-        </script>
+        </script> 
     </body>
 </html>
 
