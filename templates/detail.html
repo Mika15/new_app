@@ -9,7 +9,7 @@
     <body>
     <nav>
             <a href="http://new_app.readthedocs.org/">
-               <img src="{{ url_for('static', filename='news-room.jpg') }}">
+               <img src="static/news-room.jpg">
             </a>
         </nav>
         <header>
@@ -25,7 +25,7 @@
             map.addLayer(osmLayer);
             var blackIcon = L.Icon.extend({
                 options: {
-                    iconUrl: "{{ url_for('static', filename='marker-24.png') }}",
+                    iconUrl: "static/marker-24.png",
                     iconSize: [24, 24]
                 }
             });
